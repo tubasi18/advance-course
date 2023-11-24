@@ -12,14 +12,13 @@
 ### - Observer Design Pattern
 
 
-- I have a WeatherDataSubject that manages temperature and humidity, notifying its observers whenever there's a change, and providing them the option to register or unregister. Observers, like CurrentConditionsDisplay and StatisticsDisplay, receive these updates, showcasing or analyzing pertinent information derived from the weather data. This approach really boosts adaptability and compartmentalization, enabling effortless addition or removal of observers without altering the subject.
-  
+- I have a WeatherDataSubject that controls humidity and temperature. It notifies its observers of changes and gives them the choice to register or unregister. These updates are sent to observers, such as CurrentConditionsDisplay and StatisticsDisplay, which display or analyze relevant data derived from the weather data. This method greatly increases flexibility and partition, making it possible to add or remove observers with ease without changing the subject.
+
 ![image](https://github.com/tubasi18/AdvanceCourse/assets/114957621/55cd9b32-e060-41da-b5b7-56057fe0e6c5)
 
 ### - Decorator Design Pattern 
 
-
-The system is monitoring the weather by adding decorators for temperature units, wind speed, and precipitation. Decorators, like TemperatureUnitsDecorator, modify the behavior of the base WeatherData component. The FactoryTemp class handles temperature unit conversions based on a specified type. It's a smart way to enhance and customize your weather data display!
+The system monitors weather by adding decorators for temperature units, wind speed, and precipitation. Decorators like TemperatureUnitsDecorator change the behavior of the underlying WeatherData component. The FactoryTemp class handles temperature unit conversion based on the specified type. This is a neat way to improve and customize your weather data display!
 
 ![image](https://github.com/tubasi18/AdvanceCourse/assets/114957621/961a2979-0b92-4ca5-bb4c-151f9a45ce5f)
 
